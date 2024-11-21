@@ -165,54 +165,54 @@ p {
 
 .game1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(/proyectoWeb/imgs/castlevania_adventure.jpg);
+    url(../imgs/castlevania_adventure.jpg);
 }
 .game1:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/proyectoWeb/imgs/castlevania_adventure.jpg);
+    url(../imgs/castlevania_adventure.jpg);
 }
 
 .game2 {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/proyectoWeb/imgs/monsterhuntertri.jpg);
+    url(../imgs/monsterhuntertri.jpg);
 }
 .game2:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/proyectoWeb/imgs/monsterhuntertri.jpg);
+    url(../imgs/monsterhuntertri.jpg);
 }
 
 .game3 {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/proyectoWeb/imgs/ys.jpg);
+    url(../imgs/ys.jpg);
 }
 .game3:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/proyectoWeb/imgs/ys.jpg);
+    url(../imgs/ys.jpg);
 }
 
 .game4 {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/proyectoWeb/imgs/xdefiant.jpeg);
+    url(../imgs/xdefiant.jpeg);
 }
 .game4:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/proyectoWeb/imgs/xdefiant.jpeg);
+    url(../imgs/xdefiant.jpeg);
 }
 
 .game5 {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/proyectoWeb/imgs/castlevania1.png);
+    url(../imgs/castlevania1.png);
 }
 .game5:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/proyectoWeb/imgs/castlevania1.png);
+    url(../imgs/castlevania1.png);
 }
 
 .game1, .game2, .game3, .game4 {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    transition: background-image 1s ease;
+    transition: background-image  ease;
 }
 
 
