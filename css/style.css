@@ -37,7 +37,7 @@ p {
 header {
     padding: 2rem 30rem;
     background: linear-gradient(to right, #121212, var(--Morado));
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     animation: gradient 8s ease infinite;
 }
 
@@ -96,13 +96,12 @@ header {
 /* -- CONTENIDO O CUERPO -- */
 
 main {
-    width: 80dvw;
     margin-left: 30rem;
     margin-right: 30rem;
 }
 
 section {
-    width: 85%;
+    width: 100%;
 }
 
 .encabezado {
@@ -135,7 +134,7 @@ p {
     flex-direction: row;
     gap: 5rem;
     height: 50rem;
-    max-width: 100%;
+    width: 100%;
     overflow: auto; 
 }
 
@@ -164,11 +163,62 @@ p {
     background-color: var(--MoradoClaro);
 }
 
+.game1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/proyectoWeb/imgs/castlevania_adventure.jpg);
+}
+.game1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/proyectoWeb/imgs/castlevania_adventure.jpg);
+}
+
+.game2 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/proyectoWeb/imgs/monsterhuntertri.jpg);
+}
+.game2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/proyectoWeb/imgs/monsterhuntertri.jpg);
+}
+
+.game3 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/proyectoWeb/imgs/ys.jpg);
+}
+.game3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/proyectoWeb/imgs/ys.jpg);
+}
+
+.game4 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/proyectoWeb/imgs/xdefiant.jpeg);
+}
+.game4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/proyectoWeb/imgs/xdefiant.jpeg);
+}
+
+.game5 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/proyectoWeb/imgs/castlevania1.png);
+}
+.game5:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/proyectoWeb/imgs/castlevania1.png);
+}
+
+.game1, .game2, .game3, .game4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    transition: background-image 1s ease;
+}
 
 
 
 
-.game {
+.listGamesContainer a{
     display: flex;
     flex-direction: column;
     min-width: 20rem;
@@ -189,7 +239,7 @@ p {
     left: 4rem;
 }
 
-.game::before {
+.listGamesContainer a::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -206,17 +256,9 @@ p {
     transition: all 0.3s ease;
 }
 
-.game:hover::before {
+.listGamesContainer a:hover::before{
     top: 2rem;
     left: 2rem;
-}
-
-.game img {
-    height: 30rem;
-    width: 21rem;
-    border-radius: 0.8rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
 .punctuation {
@@ -257,10 +299,6 @@ footer {
     padding: 1.8rem;
 
 }
-
-
-
-
 
 .icon-border {
     border: solid var(--ColorFondo) .3rem;
@@ -320,18 +358,42 @@ footer {
 
 
 @media (max-width: 1250px) {
+    main {
+        width: 80%;
+        margin-left: 10rem;
+        margin-right: 0;
+    }
+
     .cabecera {
         flex-direction: column;
         align-items: center;
     }
 
     .cabecera nav {
+        margin-top: 1.5rem;
         justify-content: center;
+    }
+
+    .listGamesContainer {
+        flex-direction: column;
+        height: 80rem;
+        
+    }
+
+    .listGamesContainer a {
+        flex-direction: row;
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 10rem;
+        max-height: 10rem;
     }
   }
 
   @media (max-width: 480px) {
+    main {
+        margin: 0;
+    }
     .cabecera nav {
-        
+        flex-direction: column;
     }
   }
