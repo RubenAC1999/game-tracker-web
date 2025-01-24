@@ -6,16 +6,18 @@ frontend skills and at the same time this helps me to improve a proyect that I a
 
 Features:
 .- Game list: The webpage displays a little list of games in which we can find.
-	.-  The games I am currently playing
 	.- The games I have completed
-	.- The games I have dropped.
+
+	TODO: .- Add in the game list the games I am currently playing (with a progress bar) and the games I have dropped.
+	      .- Add a section to see the full list
+
  This list has a cronological order and it shows just some of them. We can find a link to show the complete list 
 with more detail next to the list.
 
-.- Responsive design: The site is designed to work on all screen sizes.
-
 .- Interactive Elements: The website has a couple of interactive elements using JavaScript.
 
+Now I am working on: 
+	.- Doing the responsive design
 
 Tecnologies:
 .- HTML5
